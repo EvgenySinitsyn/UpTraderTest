@@ -1,0 +1,10 @@
+{% for key, value in menu.items %}
+<div>
+   {% for item in value %}
+        <a href="{% url 'menu' item.slug %}">{{ item }}</a>
+   {% endfor %}
+</div>
+{% endfor %}
+
+
+

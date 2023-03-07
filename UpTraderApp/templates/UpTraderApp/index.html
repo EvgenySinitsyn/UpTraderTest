@@ -1,0 +1,7 @@
+{% extends 'UpTraderApp/base.html' %}
+
+{% block content %}
+{% for item in queryset %}
+    <a href="{% url 'menu' item.slug %}">{{ item.name }}</a>
+{% endfor %}
+{% endblock content %}
